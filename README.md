@@ -62,3 +62,19 @@ Heavier dataset:
     
 - **The Pile** : [https://pile.eleuther.ai](https://pile.eleuther.ai/) (886 GB corpus used by models like GPT-Neo and LLaMA.)
 
+# Tokenisation 
+
+## Tokenization — what is it?
+
+To understand a text, our GPT model needs to **perform mathematical operations on the words**. But on raw text, it's just impossible. For that, we need to **tokenize** our text. That is to say, that we will **transform and split it into text units** to adapt it to our model. We say that we split it into tokens.
+
+In the example of a model like GPT, we begin by **taking a text corpus and splitting it into units**. Each unit is **added into a list of vocabulary with an ID** if it doesn’t already exist. 
+
+Then our model is **ready** to tokenize. The text will be split into units, and each unit in the text is replaced by its associated number.
+
+![Miro Image](https://miro.medium.com/v2/resize:fit:828/format:webp/1*gWP5Whykah1101EpYy17qQ.png)
+
+*Source Image : https://teetracker.medium.com/llm-fine-tuning-step-tokenizing-caebb280cfc2
+
+The main question, therefore, is how we will split our text. We will explore the different approaches available to us.
+
